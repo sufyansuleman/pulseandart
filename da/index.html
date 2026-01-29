@@ -8,20 +8,29 @@
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Spring til indhold</a>
   <header>
-    <div class="lang-switch">
-      <a href="../en/index.html">EN</a> /
-      <a href="../da/index.html" class="active">DA</a>
+    <div class="navbar">
+      <span class="brand">PulsePaint</span>
+      <nav class="nav-links" id="site-nav">
+        <a href="#gallery">Portfolio</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#sales">Køb kunst</a>
+        <a href="#contact">Kontakt</a>
+        <span class="lang-switch">
+          <a href="../en/index.html">EN</a> /
+          <a href="../da/index.html" class="active">DA</a>
+        </span>
+      </nav>
+      <button class="nav-toggle" aria-label="Åbn menu" aria-controls="site-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
-    <h1>pulsepaint</h1>
-    <nav>
-      <a href="#gallery">Portfolio</a>
-      <a href="#workshops">Workshops</a>
-      <a href="#sales">Køb kunst</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
   </header>
-  <main>
+  <div class="layout">
+  <main id="main-content">
     <section class="hero">
       <h1>når videnskab møder kunst</h1>
       <p>pulsepaint er et lille studie i Aarhus, hvor kunst, naturvidenskab og undervisning mødes. Vi laver tidsskriftsforsider, malerier, vægkunst og tilbyder kreative workshops for både børn og voksne. Vores arbejde udforsker livets skønhed og glæden ved at skabe.</p>
@@ -38,6 +47,7 @@
             <div class="gallery-title">Celler i blomst</div>
             <div class="gallery-meta">Digital illustration, 2025</div>
             <div class="gallery-price">DKK 1.200 (tryk)</div>
+            <a class="gallery-enquire" href="mailto:pulsepaint@gmail.com?subject=Forespørgsel%20om%20Celler%20i%20blomst" tabindex="0" aria-label="Forespørg om Celler i blomst">Forespørg</a>
           </div>
         </div>
         <div class="gallery-item">
@@ -46,6 +56,7 @@
             <div class="gallery-title">Flodens hukommelse</div>
             <div class="gallery-meta">Akryl på lærred, 2024</div>
             <div class="gallery-price">DKK 3.800 (original)</div>
+            <a class="gallery-enquire" href="mailto:pulsepaint@gmail.com?subject=Forespørgsel%20om%20Flodens%20hukommelse" tabindex="0" aria-label="Forespørg om Flodens hukommelse">Forespørg</a>
           </div>
         </div>
         <div class="gallery-item">
@@ -54,6 +65,7 @@
             <div class="gallery-title">Skolemur</div>
             <div class="gallery-meta">Vægmaleri, 2023</div>
             <div class="gallery-price">Bestillingsarbejde</div>
+            <a class="gallery-enquire" href="mailto:pulsepaint@gmail.com?subject=Forespørgsel%20om%20Skolemur" tabindex="0" aria-label="Forespørg om Skolemur">Forespørg</a>
           </div>
         </div>
         <div class="gallery-item">
@@ -62,6 +74,7 @@
             <div class="gallery-title">Mikrokosmos</div>
             <div class="gallery-meta">Linoleumstryk, 2025</div>
             <div class="gallery-price">DKK 400 (tryk)</div>
+            <a class="gallery-enquire" href="mailto:pulsepaint@gmail.com?subject=Forespørgsel%20om%20Mikrokosmos" tabindex="0" aria-label="Forespørg om Mikrokosmos">Forespørg</a>
           </div>
         </div>
         <!-- ...tilføj flere værker efter behov... -->
@@ -92,21 +105,49 @@
       <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne. Priser fremgår i galleriet ovenfor. <span style="color:var(--gray);">(Online betaling og MobilePay kommer snart)</span></p>
     </section>
 
+    <!-- Mobil/tablet sidebar info card (<980px) -->
+    <section class="sidebar" style="display:none;" id="sidebar-mobile">
+      <div class="sidebar-title">Info</div>
+      <ul class="sidebar-list">
+        <li><span class="sidebar-label">Email:</span> pulsepaint@gmail.com</li>
+        <li><span class="sidebar-label">By:</span> Aarhus</li>
+        <li><span class="sidebar-label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
+      </ul>
+      <a class="sidebar-btn" href="#contact">Book workshop</a>
+      <div class="sidebar-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD0-PLACEHOLDER-FORM-URL/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Kontaktformular">Indlæser…</iframe>
+      </div>
+    </section>
     <section id="contact">
       <h2>Kontakt</h2>
       <ul class="contact-list">
-        <li><span class="label">Email:</span> pulsepaint [at] gmail [dot] com</li>
+        <li><span class="label">Email:</span> pulsepaint@gmail.com</li>
         <li><span class="label">By:</span> Aarhus</li>
         <li><span class="label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
       </ul>
       <div class="contact-form-placeholder">
-        Kontaktformular kommer snart (ingen data gemmes)
+        <!-- Google Form embed for contact (replace URL with your real form) -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD0-PLACEHOLDER-FORM-URL/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Kontaktformular">Indlæser…</iframe>
       </div>
     </section>
   </main>
+  <!-- Desktop sticky sidebar (≥980px) -->
+  <aside class="sidebar" id="sidebar-desktop">
+    <div class="sidebar-title">Info</div>
+    <ul class="sidebar-list">
+      <li><span class="sidebar-label">Email:</span> pulsepaint@gmail.com</li>
+      <li><span class="sidebar-label">By:</span> Aarhus</li>
+      <li><span class="sidebar-label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
+    </ul>
+    <a class="sidebar-btn" href="#contact">Book workshop</a>
+    <div class="sidebar-form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD0-PLACEHOLDER-FORM-URL/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Kontaktformular">Indlæser…</iframe>
+    </div>
+  </aside>
   <footer>
     &copy; <span id="year"></span> pulsepaint. Alle rettigheder forbeholdes. | CVR: [tilføjes]
   </footer>
+  <script src="../assets/nav.js"></script>
   <script>
     // Opdater år automatisk
     document.getElementById('year').textContent = new Date().getFullYear();
