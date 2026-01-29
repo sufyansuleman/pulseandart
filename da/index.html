@@ -30,7 +30,7 @@
     </div>
   </header>
   <div class="layout">
-  <main id="main-content">
+    <main id="main-content">
     <section class="hero">
       <h1>Når videnskab møder kunst</h1>
       <p>Pulsepaint er et lille studie i Aarhus, hvor kunst, naturvidenskab og undervisning mødes. Vi laver tidsskriftsforsider, malerier, vægkunst og tilbyder kreative workshops for både børn og voksne. Vores arbejde udforsker livets skønhed og glæden ved at skabe.</p>
@@ -99,6 +99,44 @@
       <p style="color:var(--accent);font-size:1.08em;font-weight:500;margin-top:0.5em;">Workshoppriser: <a href="#contact" style="color:var(--accent-dark);text-decoration:underline;">Kontakt os</a> for et tilbud.</p>
     </section>
 
+    <section id="workshop-videos">
+      <h2>Workshopvideoer</h2>
+      <div class="workshop-media-grid">
+        <!-- Eksempel på lokal videofil -->
+        <div class="workshop-video-item">
+          <video width="320" height="180" controls poster="../images/workshop-video-thumb1.jpg">
+            <source src="../videos/workshop1.mp4" type="video/mp4">
+            Din browser understøtter ikke video-tagget.
+          </video>
+          <div class="workshop-media-caption">Science-Art Workshop, Aarhus 2025</div>
+        </div>
+        <!-- Eksempel på Instagram embed (udskift med din rigtige post-link) -->
+        <div class="workshop-video-item">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/XXXXXXXXXXX/" data-instgrm-version="14" style="background:#fff; border:0; margin:0 auto; max-width:320px; width:100%;"></blockquote>
+          <div class="workshop-media-caption">Instagram videoopslag</div>
+        </div>
+        <!-- Tilføj flere videoer efter behov -->
+      </div>
+      <p style="color:var(--gray);font-size:1em;">Flere videoer kommer snart.</p>
+      <script async src="https://www.instagram.com/embed.js"></script>
+    </section>
+
+    <section id="workshop-pictures">
+      <h2>Workshopbilleder</h2>
+      <div class="workshop-media-grid">
+        <div class="workshop-picture-item">
+          <img src="../images/workshop-placeholder1.jpg" alt="Børn maler i workshop" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+          <div class="workshop-media-caption">Børn maler, Skoleworkshop 2025</div>
+        </div>
+        <div class="workshop-picture-item">
+          <img src="../images/workshop-placeholder2.jpg" alt="Gruppe arbejder med science-art" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+          <div class="workshop-media-caption">Gruppeprojekt, Science-Art 2024</div>
+        </div>
+        <!-- Tilføj flere billeder efter behov -->
+      </div>
+      <p style="color:var(--gray);font-size:1em;">Flere billeder kommer snart.</p>
+    </section>
+
     <section id="sales">
       <h2>Kunstsalg & Bestillinger</h2>
       <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne. Priser fremgår i galleriet ovenfor. <span style="color:var(--gray);">(Online betaling og MobilePay kommer snart)</span></p>
@@ -127,20 +165,20 @@
         <button class="cta-btn" id="openContactModal" type="button">Kontakt os</button>
       </div>
     </section>
-  </main>
-  <!-- Desktop sticky sidebar (≥980px) -->
-  <aside class="sidebar" id="sidebar-desktop">
-    <div class="sidebar-title">Info</div>
-    <ul class="sidebar-list">
-      <li><span class="sidebar-label">Email:</span> pulsepaint@gmail.com</li>
-      <li><span class="sidebar-label">By:</span> Aarhus</li>
-      <li><span class="sidebar-label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
-    </ul>
-    <a class="sidebar-btn" href="#contact">Book workshop</a>
-    <a class="sidebar-btn" href="#contact">Bestil et tidsskriftscover</a>
-    <a class="sidebar-btn" href="#contact">Book et møde om tidsskriftscover</a>
-    <a class="sidebar-btn" href="#contact">Book møde for tidsskriftscover</a>
-  </aside>
+    </main>
+    <!-- Desktop sticky sidebar (≥980px) -->
+    <aside class="sidebar" id="sidebar-desktop">
+      <div class="sidebar-title">Info</div>
+      <ul class="sidebar-list">
+        <li><span class="sidebar-label">Email:</span> pulsepaint@gmail.com</li>
+        <li><span class="sidebar-label">By:</span> Aarhus</li>
+        <li><span class="sidebar-label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
+      </ul>
+      <a class="sidebar-btn" href="#contact">Book workshop</a>
+      <a class="sidebar-btn" href="#contact">Bestil et tidsskriftscover</a>
+      <a class="sidebar-btn" href="#contact">Book et møde om tidsskriftscover</a>
+      <a class="sidebar-btn" href="#contact">Book møde for tidsskriftscover</a>
+    </aside>
   </div>
   <footer>
     &copy; <span id="year"></span> pulsepaint. Alle rettigheder forbeholdes. | CVR: [tilføjes]
