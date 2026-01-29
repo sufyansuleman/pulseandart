@@ -1,0 +1,5 @@
+<!-- Placeholder image for wall painting (replace with real artwork) -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#bdb8b1"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#fffdfa" font-size="32" font-family="Segoe UI, Arial, sans-serif" dy=".3em">Wall Painting</text>
+</svg>
