@@ -25,18 +25,18 @@
 }
 
 :root {
-  --bg: #f6faff;
+  --bg: #f7faff;
   --sand: #eaf2fb;
   --gray: #7a8ca3;
-  --accent: #2563eb;
-  --accent-dark: #1e40af;
-  --accent-light: #93c5fd;
-  --coral: #2563eb;
-  --teal: #2563eb;
+  --accent: #2563b8;
+  --accent-dark: #1e3a8a;
+  --accent-light: #b6d4fe;
+  --coral: #2563b8;
+  --teal: #2563b8;
   --text: #23272f;
   --header: #fff;
   --border: #dbeafe;
-  --shadow: 0 2px 12px rgba(37,99,235,0.08);
+  --shadow: 0 2px 12px rgba(37,99,184,0.08);
   --radius: 14px;
   --nav-bg: rgba(255,255,255,0.96);
   --nav-blur: blur(14px);
@@ -117,15 +117,23 @@ header {
 .lang-switch {
   margin-left: 1.5rem;
   font-size: 1rem;
+  background: none !important;
+  padding: 0;
 }
 .lang-switch a {
-  color: var(--gray);
+  color: var(--accent-dark);
   margin-left: 0.7rem;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
+  background: none !important;
+  padding: 0.1em 0.5em;
+  border-radius: 1em;
+  transition: background 0.18s, color 0.18s;
 }
 .lang-switch a.active, .lang-switch a:hover {
-  color: var(--accent);
+  color: #fff;
+  background: var(--accent);
+}
 }
 
 /* Hamburger menu */
