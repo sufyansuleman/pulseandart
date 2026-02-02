@@ -21,15 +21,22 @@ footer {
 #contact-cta {
   text-align: center;
   padding: 3em 1em;
-  background: #e0f7fa;
+  background: #ccecf4;
   border-radius: var(--radius);
   margin: 2em 0 0 0;
-  color: #188ba0;
+  color: #0f4f63;
 }
 #contact-cta h2, #contact-cta p, #contact-cta a.btn, #contact-cta .btn {
-  color: #188ba0 !important;
+  color: #0f4f63 !important;
   font-weight: 600;
 }
+#contact-cta .btn.primary {
+  background: #0f92ad;
+  color: #ffffff !important;
+}
+#contact-cta .btn.primary:hover,
+#contact-cta .btn.primary:focus {
+  background: #0b7a92;
 }
 #contact-cta h2 {
   margin-bottom: 0.5em;
