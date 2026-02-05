@@ -1,7 +1,7 @@
 // nav.js – mobile menu and accessibility for PulsePaint
 (function() {
   var navToggle = document.querySelector('.nav-toggle');
-  var navLinks = document.querySelector('.nav-links');
+  var navLinks = document.querySelector('.nav-links') || document.querySelector('.main-nav');
   if (!navToggle || !navLinks) return;
 
   function closeMenu() {

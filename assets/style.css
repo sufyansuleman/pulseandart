@@ -402,20 +402,25 @@ header {
 }
 
 @media (max-width: 800px) {
+  nav {
+    position: relative;
+  }
   .nav-links {
     position: absolute;
     top: 64px;
     right: 0;
+    left: 0;
+    width: 100%;
     background: var(--nav-bg);
     backdrop-filter: var(--nav-blur);
     -webkit-backdrop-filter: var(--nav-blur);
     box-shadow: 0 4px 16px rgba(180,138,120,0.10);
     border-radius: 0 0 0 var(--radius);
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 0.7rem;
-    min-width: 180px;
-    padding: 1.2rem 1.2rem 1.2rem 2.2rem;
+    min-width: 200px;
+    padding: 1.2rem 1.4rem 1.2rem 1.4rem;
     z-index: 1002;
     display: none;
   }
@@ -429,6 +434,7 @@ header {
 
 nav {
   margin-top: 0.5rem;
+  background: #fff;
 }
 nav a {
   color: var(--text);
