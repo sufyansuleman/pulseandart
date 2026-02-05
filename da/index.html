@@ -100,56 +100,6 @@
         <img src="assets/images/image3.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 6">
       </div>
       </div>
-      <section id="art-sales">
-          <h2>Kunstsalg & Kollektioner</h2>
-          <div class="gallery art-sales-gallery">
-            <div class="gallery-item">
-              <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Kunstværk 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1.000')">
-              <div class="gallery-price">Pris: DKK 1.000</div>
-            </div>
-            <div class="gallery-item">
-              <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Kunstværk 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1.200')">
-              <div class="gallery-price">Pris: DKK 1.200</div>
-            </div>
-            <div class="gallery-item">
-              <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Kunstværk 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1.500')">
-              <div class="gallery-price">Pris: DKK 1.500</div>
-            </div>
-            <div class="gallery-item">
-              <img src="../images/art-sale4.jpg" loading="lazy" decoding="async" alt="Kunstværk 4" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1.800')">
-              <div class="gallery-price">Pris: DKK 1.800</div>
-            </div>
-            <div class="gallery-item">
-              <img src="../images/art-sale5.jpg" loading="lazy" decoding="async" alt="Kunstværk 5" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2.000')">
-              <div class="gallery-price">Pris: DKK 2.000</div>
-            </div>
-            <div class="gallery-item">
-              <img src="../images/art-sale6.jpg" loading="lazy" decoding="async" alt="Kunstværk 6" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2.200')">
-              <div class="gallery-price">Pris: DKK 2.200</div>
-            </div>
-          </div>
-        </section>
-        <!-- Art Modal -->
-        <div id="artModal" style="display:none;position:fixed;z-index:3000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);align-items:center;justify-content:center;">
-          <div style="background:#fff;border-radius:16px;max-width:600px;width:90vw;padding:2.2rem 1.5rem 1.5rem 1.5rem;box-shadow:0 8px 32px #0002;position:relative;">
-            <button id="closeArtModal" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;line-height:1;color:#aaa;cursor:pointer;">&times;</button>
-            <img id="artModalImg" src="" alt="Kunstværk" style="width:100%;max-width:520px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
-            <div id="artModalPrice" style="font-size:1.2em;color:var(--accent);margin-top:0.7em;"></div>
-          </div>
-        </div>
-        <script>
-          function openArtModal(imgSrc, price) {
-            document.getElementById('artModalImg').src = imgSrc;
-            document.getElementById('artModalPrice').textContent = 'Pris: ' + price;
-            document.getElementById('artModal').style.display = 'flex';
-          }
-          document.getElementById('closeArtModal').onclick = function() {
-            document.getElementById('artModal').style.display = 'none';
-          };
-          document.getElementById('artModal').onclick = function(e) {
-            if(e.target === this) this.style.display = 'none';
-          };
-        </script>
     </section>
 
     <section id="sustainable-art">
@@ -198,10 +148,78 @@
       <p style="color:var(--gray);font-size:1em;">Flere billeder kommer snart.</p>
     </section>
 
-    <section id="sales">
-      <h2>Kunstsalg & Bestillinger</h2>
-      <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne. Priser fremgår i galleriet ovenfor.</p>
-    </section>
+      <section id="sales">
+        <h2>Kunstsalg & Kollektioner</h2>
+        <div class="gallery art-sales-gallery">
+          <div class="gallery-item">
+            <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Kunstværk 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1.000')">
+            <div class="gallery-price">Pris: DKK 1.000</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Kunstværk 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1.200')">
+            <div class="gallery-price">Pris: DKK 1.200</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Kunstværk 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1.500')">
+            <div class="gallery-price">Pris: DKK 1.500</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/art-sale4.jpg" loading="lazy" decoding="async" alt="Kunstværk 4" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1.800')">
+            <div class="gallery-price">Pris: DKK 1.800</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/art-sale5.jpg" loading="lazy" decoding="async" alt="Kunstværk 5" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2.000')">
+            <div class="gallery-price">Pris: DKK 2.000</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/art-sale6.jpg" loading="lazy" decoding="async" alt="Kunstværk 6" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2.200')">
+            <div class="gallery-price">Pris: DKK 2.200</div>
+          </div>
+        </div>
+        <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne.</p>
+      </section>
+    <!-- Art Modal -->
+    <div id="artModal" style="display:none;position:fixed;z-index:3000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);align-items:center;justify-content:center;">
+      <div style="background:#fff;border-radius:16px;max-width:600px;width:90vw;padding:2.2rem 1.5rem 1.5rem 1.5rem;box-shadow:0 8px 32px #0002;position:relative;">
+        <button id="closeArtModal" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;line-height:1;color:#aaa;cursor:pointer;">&times;</button>
+        <img id="artModalImg" src="" alt="Kunstværk" style="width:100%;max-width:520px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+        <div id="artModalPrice" style="font-size:1.2em;color:var(--accent);margin-top:0.7em;"></div>
+      </div>
+    </div>
+    <script>
+      function openArtModal(imgSrc, price) {
+        document.getElementById('artModalImg').src = imgSrc;
+        document.getElementById('artModalPrice').textContent = 'Pris: ' + price;
+        document.getElementById('artModal').style.display = 'flex';
+      }
+      document.getElementById('closeArtModal').onclick = function() {
+        document.getElementById('artModal').style.display = 'none';
+      };
+      document.getElementById('artModal').onclick = function(e) {
+        if(e.target === this) this.style.display = 'none';
+      };
+    </script>
+      <!-- Art Modal -->
+      <div id="artModal" style="display:none;position:fixed;z-index:3000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);align-items:center;justify-content:center;">
+        <div style="background:#fff;border-radius:16px;max-width:600px;width:90vw;padding:2.2rem 1.5rem 1.5rem 1.5rem;box-shadow:0 8px 32px #0002;position:relative;">
+          <button id="closeArtModal" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;line-height:1;color:#aaa;cursor:pointer;">&times;</button>
+          <img id="artModalImg" src="" alt="Kunstværk" style="width:100%;max-width:520px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+          <div id="artModalPrice" style="font-size:1.2em;color:var(--accent);margin-top:0.7em;"></div>
+        </div>
+      </div>
+      <script>
+        function openArtModal(imgSrc, price) {
+          document.getElementById('artModalImg').src = imgSrc;
+          document.getElementById('artModalPrice').textContent = 'Pris: ' + price;
+          document.getElementById('artModal').style.display = 'flex';
+        }
+        document.getElementById('closeArtModal').onclick = function() {
+          document.getElementById('artModal').style.display = 'none';
+        };
+        document.getElementById('artModal').onclick = function(e) {
+          if(e.target === this) this.style.display = 'none';
+        };
+      </script>
 
     <!-- Mobil/tablet sidebar info card (synlig <980px) -->
     <section class="sidebar" style="display:none;" id="sidebar-mobile">
