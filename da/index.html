@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <title>pulsepaint – Kunst, Videnskab & Workshops i Aarhus</title>
   <meta name="description" content="Pulsepaint er et tværfagligt studie i Aarhus. Kunst, tidsskriftsforsider, vægmalerier, naturvidenskab og kreative workshops for alle aldre.">
-  <link rel="stylesheet" href="../assets/style.css?v=20260205a">
+  <link rel="canonical" href="https://sufyansuleman.github.io/pulsepaints/da/index.html">
+  <link rel="alternate" hreflang="da" href="https://sufyansuleman.github.io/pulsepaints/da/index.html">
+  <link rel="alternate" hreflang="en" href="https://sufyansuleman.github.io/pulsepaints/en/index.html">
+  <meta property="og:title" content="pulsepaint – Kunst, Videnskab & Workshops i Aarhus">
+  <meta property="og:description" content="Tværfagligt studie der skaber kunst, tidsskriftsforsider, vægmalerier og kreative workshops for alle aldre i Aarhus.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sufyansuleman.github.io/pulsepaints/da/index.html">
+  <link rel="stylesheet" href="../assets/style.css?v=20260205b">
   <style>
     .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
     .skip-link:focus, .skip-link:active { position:absolute; left:1rem; top:1rem; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; z-index:2000; background:var(--accent,#0f92ad); color:#fff; padding:0.6rem 1rem; border-radius:8px; outline:2px solid #fff; text-decoration:none; }
@@ -18,9 +24,9 @@
   <header>
     <nav>
       <a href="#home" class="logo" aria-label="Pulse Studio forside">
-        <img src="../assets/logo-color.png" alt="" style="height:40px;vertical-align:middle;">
+        <img src="../assets/logo-color.png" alt="" loading="lazy" decoding="async">
       </a>
-      <ul class="main-nav nav-links" id="site-nav">
+      <ul class="nav-links" id="site-nav">
         <li><a href="#home">Forside</a></li>
         <li><a href="#portfolio">Portfolio</a>
           <ul class="submenu">
@@ -43,8 +49,8 @@
       </button>
     </nav>
   </header>
-    <section id="hero">
-      <h1>Velkommen til Pulse Studio</h1>
+    <section id="home" aria-labelledby="home-title">
+      <h1 id="home-title">Velkommen til Pulse Studio</h1>
       <h2>Kreative Videnskabelige Illustrationer</h2>
       <p>Din one-stop-shop for kunst, videnskab og kreative løsninger i Aarhus.</p>
       <a href="#contact" class="btn primary">Kontakt os</a>
@@ -53,8 +59,8 @@
     </section>
   <div class="layout">
     <main id="main-content">
-    <section class="hero">
-      <h1>Når videnskab møder kunst</h1>
+    <section class="hero-card" id="about">
+      <h2 id="home-title">Når videnskab møder kunst</h2>
       <p>Pulsepaint er et lille studie i Aarhus, hvor kunst, naturvidenskab og undervisning mødes. Vi laver tidsskriftsforsider, malerier, vægkunst og tilbyder kreative workshops for både børn og voksne. Vores arbejde udforsker livets skønhed og glæden ved at skabe.</p>
       <a class="cta-btn" href="#contact">Kontakt / Book workshop</a>
     </section>
@@ -64,67 +70,61 @@
       <h3 id="portfolio-scientific">Videnskabelig Portfolio</h3>
       <div class="gallery scientific-gallery">
       <div class="gallery-item">
-        <img src="assets/images/image1.webp" loading="lazy" alt="Videnskabelig illustration eksempel 1">
+        <img src="assets/images/image1.webp" loading="lazy" decoding="async" alt="Videnskabelig illustration eksempel 1">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image2.webp" loading="lazy" alt="Videnskabelig illustration eksempel 2">
+        <img src="assets/images/image2.webp" loading="lazy" decoding="async" alt="Videnskabelig illustration eksempel 2">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image3.webp" loading="lazy" alt="Videnskabelig illustration eksempel 3">
+        <img src="assets/images/image3.webp" loading="lazy" decoding="async" alt="Videnskabelig illustration eksempel 3">
       </div>
       </div>
       <h3 id="portfolio-general">Generel Portfolio</h3>
       <div class="gallery general-gallery">
       <div class="gallery-item">
-        <img src="assets/images/image4.webp" loading="lazy" alt="Generel illustration eksempel 1">
+        <img src="assets/images/image4.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 1">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image5.webp" loading="lazy" alt="Generel illustration eksempel 2">
+        <img src="assets/images/image5.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 2">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image6.webp" loading="lazy" alt="Generel illustration eksempel 3">
+        <img src="assets/images/image6.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 3">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image1.webp" loading="lazy" alt="Generel illustration eksempel 4">
+        <img src="assets/images/image1.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 4">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image2.webp" loading="lazy" alt="Generel illustration eksempel 5">
+        <img src="assets/images/image2.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 5">
       </div>
       <div class="gallery-item">
-        <img src="assets/images/image3.webp" loading="lazy" alt="Generel illustration eksempel 6">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/image4.webp" loading="lazy" alt="Generel illustration eksempel 7">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/image5.webp" loading="lazy" alt="Generel illustration eksempel 8">
+        <img src="assets/images/image3.webp" loading="lazy" decoding="async" alt="Generel illustration eksempel 6">
       </div>
       </div>
       <section id="art-sales">
           <h2>Kunstsalg & Kollektioner</h2>
           <div class="gallery art-sales-gallery">
             <div class="gallery-item">
-              <img src="../images/art-sale1.jpg" loading="lazy" alt="Kunstværk 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1.000')">
+              <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Kunstværk 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1.000')">
               <div class="gallery-price">Pris: DKK 1.000</div>
             </div>
             <div class="gallery-item">
-              <img src="../images/art-sale2.jpg" loading="lazy" alt="Kunstværk 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1.200')">
+              <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Kunstværk 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1.200')">
               <div class="gallery-price">Pris: DKK 1.200</div>
             </div>
             <div class="gallery-item">
-              <img src="../images/art-sale3.jpg" loading="lazy" alt="Kunstværk 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1.500')">
+              <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Kunstværk 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1.500')">
               <div class="gallery-price">Pris: DKK 1.500</div>
             </div>
             <div class="gallery-item">
-              <img src="../images/art-sale4.jpg" loading="lazy" alt="Kunstværk 4" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1.800')">
+              <img src="../images/art-sale4.jpg" loading="lazy" decoding="async" alt="Kunstværk 4" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1.800')">
               <div class="gallery-price">Pris: DKK 1.800</div>
             </div>
             <div class="gallery-item">
-              <img src="../images/art-sale5.jpg" loading="lazy" alt="Kunstværk 5" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2.000')">
+              <img src="../images/art-sale5.jpg" loading="lazy" decoding="async" alt="Kunstværk 5" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2.000')">
               <div class="gallery-price">Pris: DKK 2.000</div>
             </div>
             <div class="gallery-item">
-              <img src="../images/art-sale6.jpg" loading="lazy" alt="Kunstværk 6" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2.200')">
+              <img src="../images/art-sale6.jpg" loading="lazy" decoding="async" alt="Kunstværk 6" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2.200')">
               <div class="gallery-price">Pris: DKK 2.200</div>
             </div>
           </div>
@@ -179,35 +179,18 @@
 
     <section id="workshop-videos">
       <h2>Workshopvideoer</h2>
-      <div class="workshop-media-grid">
-        <!-- Eksempel på lokal videofil -->
-        <div class="workshop-video-item">
-          <video width="320" height="180" controls poster="../images/workshop-video-thumb1.jpg">
-            <source src="../videos/workshop1.mp4" type="video/mp4">
-            Din browser understøtter ikke video-tagget.
-          </video>
-          <div class="workshop-media-caption">Science-Art Workshop, Aarhus 2025</div>
-        </div>
-        <!-- Eksempel på Instagram embed (udskift med din rigtige post-link) -->
-        <div class="workshop-video-item">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/XXXXXXXXXXX/" data-instgrm-version="14" style="background:#fff; border:0; margin:0 auto; max-width:320px; width:100%;"></blockquote>
-          <div class="workshop-media-caption">Instagram videoopslag</div>
-        </div>
-        <!-- Tilføj flere videoer efter behov -->
-      </div>
-      <p style="color:var(--gray);font-size:1em;">Flere videoer kommer snart.</p>
-      <script async src="https://www.instagram.com/embed.js"></script>
+      <p style="color:var(--gray);font-size:1em;">Højdepunkter kommer snart. Vil du se et klip nu? Skriv til os, så deler vi den seneste reel.</p>
     </section>
 
     <section id="workshop-pictures">
       <h2>Workshopbilleder</h2>
       <div class="workshop-media-grid">
         <div class="workshop-picture-item">
-          <img src="../images/workshop-placeholder1.jpg" alt="Børn maler i workshop" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+          <img src="../images/workshop-placeholder1.jpg" loading="lazy" decoding="async" alt="Børn maler i workshop" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
           <div class="workshop-media-caption">Børn maler, Skoleworkshop 2025</div>
         </div>
         <div class="workshop-picture-item">
-          <img src="../images/workshop-placeholder2.jpg" alt="Gruppe arbejder med science-art" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
+          <img src="../images/workshop-placeholder2.jpg" loading="lazy" decoding="async" alt="Gruppe arbejder med science-art" style="width:100%;max-width:320px;border-radius:12px;box-shadow:0 2px 8px #1cc8ee22;">
           <div class="workshop-media-caption">Gruppeprojekt, Science-Art 2024</div>
         </div>
         <!-- Tilføj flere billeder efter behov -->
@@ -217,7 +200,7 @@
 
     <section id="sales">
       <h2>Kunstsalg & Bestillinger</h2>
-      <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne. Priser fremgår i galleriet ovenfor. <span style="color:var(--gray);">(Online betaling og MobilePay kommer snart)</span></p>
+      <p>Originalværker og kvalitetsprint kan købes. Bestillingsopgaver (tidsskriftsforsider, vægmalerier m.m.) er velkomne. Priser fremgår i galleriet ovenfor.</p>
     </section>
 
     <!-- Mobil/tablet sidebar info card (synlig <980px) -->
@@ -235,7 +218,7 @@
     <section id="contact">
       <h2>Kontakt</h2>
       <ul class="contact-list">
-        <li><span class="label">Email:</span> pulsepaint@gmail.com</li>
+        <li><span class="label">Email:</span> <a href="mailto:pulsepaint@gmail.com">pulsepaint@gmail.com</a></li>
         <li><span class="label">By:</span> Aarhus</li>
         <li><span class="label">Instagram:</span> <span style="color:var(--gray);">(kommer snart)</span></li>
       </ul>
@@ -262,14 +245,10 @@
     <p>Send os din beskrivelse, og vi vender tilbage inden for 24 timer.</p>
     <a href="#contact" class="btn primary">Kontakt os</a>
   </section>
-  <section id="contact">
-    <h2>Kontakt os</h2>
-    <p>Email: <a href="mailto:info@pulsestudio.com">info@pulsestudio.com</a><br>Lokation: Aarhus, DK</p>
-  </section>
   <footer>
     <div class="footer-container">
       <div class="footer-col">
-          <img src="assets/logo-footer.png" loading="lazy" alt="Pulse Studio Logo" style="max-width:120px;">
+          <img src="assets/logo-footer.png" loading="lazy" decoding="async" alt="Pulse Studio Logo" style="max-width:120px;">
         <p>© 2026 Pulse Studio</p>
       </div>
       <div class="footer-col">
@@ -283,7 +262,7 @@
       </div>
       <div class="footer-col">
         <h3>Kontakt</h3>
-        <p>Email: info@pulsestudio.com<br>Adresse: Aarhus, DK<br>CVR: (kommer snart)</p>
+        <p>Email: pulsepaint@gmail.com<br>Adresse: Aarhus, DK<br>CVR: (kommer snart)</p>
       </div>
     </div>
   </footer>
@@ -310,10 +289,8 @@
       </form>
     </div>
   </div>
-  <script src="../assets/nav.js?v=20260205a"></script>
+  <script src="../assets/nav.js?v=20260205b"></script>
   <script>
-    // Opdater år automatisk
-    document.getElementById('year').textContent = new Date().getFullYear();
     // Kontakt Modal logik
     const openBtn = document.getElementById('openContactModal');
     const modal = document.getElementById('contactModal');
