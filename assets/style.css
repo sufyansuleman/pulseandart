@@ -171,6 +171,8 @@ footer { background: #000; border-top: 1px solid #222; color: #fff; text-align: 
 .footer-col { flex: 1 1 220px; margin: 0.5rem; }
 .footer-col h3 { margin-bottom: 0.5em; color: #fff; }
 .footer-col a { color: #fff; }
+footer ul { list-style: none; padding: 0; margin: 0.2rem 0 0 0; }
+footer ul li { margin: 0.25rem 0; }
 
 @media (max-width: 600px) {
   nav { padding: 0.5rem 0.9rem; }
