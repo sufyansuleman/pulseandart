@@ -13,7 +13,7 @@
   <meta property="og:description" content="Interdisciplinary studio creating art, journal covers, wall paintings, and creative workshops for all ages in Aarhus.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sufyansuleman.github.io/pulsepaints/en/index.html">
-  <link rel="stylesheet" href="../assets/style.css?v=20260205b">
+  <link rel="stylesheet" href="../assets/style.css?v=20260209a">
   <style>
     .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
     .skip-link:focus, .skip-link:active { position:absolute; left:1rem; top:1rem; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; z-index:2000; background:var(--accent,#0f92ad); color:#fff; padding:0.6rem 1rem; border-radius:8px; outline:2px solid #fff; text-decoration:none; }
@@ -152,33 +152,73 @@
 
     <section id="sales">
       <h2>Art Sales & Collections</h2>
-      <div class="gallery art-sales-gallery">
-        <div class="gallery-item">
-          <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Artwork 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1,000')">
-          <div class="gallery-price">Price: DKK 1,000</div>
-        </div>
-        <div class="gallery-item">
-          <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Artwork 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1,200')">
-          <div class="gallery-price">Price: DKK 1,200</div>
-        </div>
-        <div class="gallery-item">
-          <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Artwork 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1,500')">
-          <div class="gallery-price">Price: DKK 1,500</div>
-        </div>
-        <div class="gallery-item">
-          <img src="../images/art-sale4.jpg" loading="lazy" decoding="async" alt="Artwork 4" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1,800')">
-          <div class="gallery-price">Price: DKK 1,800</div>
-        </div>
-        <div class="gallery-item">
-          <img src="../images/art-sale5.jpg" loading="lazy" decoding="async" alt="Artwork 5" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2,000')">
-          <div class="gallery-price">Price: DKK 2,000</div>
-        </div>
-        <div class="gallery-item">
-          <img src="../images/art-sale6.jpg" loading="lazy" decoding="async" alt="Artwork 6" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2,200')">
-          <div class="gallery-price">Price: DKK 2,200</div>
+      <div class="sale-group">
+        <h3>Originals</h3>
+        <div class="sale-carousel" aria-label="Original artworks carousel">
+          <button class="sale-nav prev" type="button" aria-label="Scroll originals left"><span>‹</span></button>
+          <div class="sale-track">
+            <div class="sale-card">
+              <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Original artwork 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'DKK 1,000')">
+              <div class="gallery-price">Price: DKK 1,000</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Original artwork 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'DKK 1,200')">
+              <div class="gallery-price">Price: DKK 1,200</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Original artwork 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'DKK 1,500')">
+              <div class="gallery-price">Price: DKK 1,500</div>
+            </div>
+          </div>
+          <button class="sale-nav next" type="button" aria-label="Scroll originals right"><span>›</span></button>
         </div>
       </div>
-      <p>Originals and high-quality prints are available for purchase. Commissioned work (journal covers, wall paintings, etc.) is welcome.</p>
+
+      <div class="sale-group">
+        <h3>Prints</h3>
+        <div class="sale-carousel" aria-label="Prints carousel">
+          <button class="sale-nav prev" type="button" aria-label="Scroll prints left"><span>‹</span></button>
+          <div class="sale-track">
+            <div class="sale-card">
+              <img src="../images/art-sale4.jpg" loading="lazy" decoding="async" alt="Print artwork 1" class="popout-img" onclick="openArtModal('../images/art-sale4-large.jpg', 'DKK 1,800')">
+              <div class="gallery-price">Price: DKK 1,800</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale5.jpg" loading="lazy" decoding="async" alt="Print artwork 2" class="popout-img" onclick="openArtModal('../images/art-sale5-large.jpg', 'DKK 2,000')">
+              <div class="gallery-price">Price: DKK 2,000</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale6.jpg" loading="lazy" decoding="async" alt="Print artwork 3" class="popout-img" onclick="openArtModal('../images/art-sale6-large.jpg', 'DKK 2,200')">
+              <div class="gallery-price">Price: DKK 2,200</div>
+            </div>
+          </div>
+          <button class="sale-nav next" type="button" aria-label="Scroll prints right"><span>›</span></button>
+        </div>
+      </div>
+
+      <div class="sale-group">
+        <h3>Commission Samples</h3>
+        <div class="sale-carousel" aria-label="Commission samples carousel">
+          <button class="sale-nav prev" type="button" aria-label="Scroll commissions left"><span>‹</span></button>
+          <div class="sale-track">
+            <div class="sale-card">
+              <img src="../images/art-sale1.jpg" loading="lazy" decoding="async" alt="Commission sample 1" class="popout-img" onclick="openArtModal('../images/art-sale1-large.jpg', 'Custom pricing')">
+              <div class="gallery-price">Custom pricing</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale2.jpg" loading="lazy" decoding="async" alt="Commission sample 2" class="popout-img" onclick="openArtModal('../images/art-sale2-large.jpg', 'Custom pricing')">
+              <div class="gallery-price">Custom pricing</div>
+            </div>
+            <div class="sale-card">
+              <img src="../images/art-sale3.jpg" loading="lazy" decoding="async" alt="Commission sample 3" class="popout-img" onclick="openArtModal('../images/art-sale3-large.jpg', 'Custom pricing')">
+              <div class="gallery-price">Custom pricing</div>
+            </div>
+          </div>
+          <button class="sale-nav next" type="button" aria-label="Scroll commissions right"><span>›</span></button>
+        </div>
+      </div>
+
+      <p>Originals, prints, and commissions are available. Journal covers, wall paintings, and bespoke pieces are welcome.</p>
     </section>
     <!-- Art Modal -->
     <div id="artModal" style="display:none;position:fixed;z-index:3000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);align-items:center;justify-content:center;">
@@ -278,6 +318,22 @@
       </form>
     </div>
   </div>
+  <script>
+    // Lightweight slider controls for art sale carousels
+    function initSaleCarousels() {
+      document.querySelectorAll('.sale-carousel').forEach(function(carousel) {
+        var track = carousel.querySelector('.sale-track');
+        if (!track) return;
+        var card = track.querySelector('.sale-card');
+        var scrollAmount = card ? card.getBoundingClientRect().width + 16 : 320;
+        var prev = carousel.querySelector('.sale-nav.prev');
+        var next = carousel.querySelector('.sale-nav.next');
+        if (prev) prev.onclick = function() { track.scrollBy({ left: -scrollAmount, behavior: 'smooth' }); };
+        if (next) next.onclick = function() { track.scrollBy({ left: scrollAmount, behavior: 'smooth' }); };
+      });
+    }
+    document.addEventListener('DOMContentLoaded', initSaleCarousels);
+  </script>
   <script src="../assets/nav.js?v=20260205b"></script>
   <script>
     // Contact Modal logic
