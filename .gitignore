@@ -1,0 +1,32 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencies
+Gemfile.lock
+vendor/
+
+# Setup scripts (local-only)
+setup.ps1
+setup-dev-env.ps1
+DEV-SETUP-README.md
+start-dev.bat
+
+# Development
+.DS_Store
+Thumbs.db
+
+# Raw/processing files (working folder, not in repo)
+raw_processed_images/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.env
+.env.local

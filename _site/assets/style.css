@@ -131,8 +131,11 @@ section h2 { color: var(--accent-dark); margin: 0 0 0.7em 0; font-size: 1.6rem; 
 
 /* Galleries */
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.4rem; margin-bottom: 1.6rem; }
-.gallery-item { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-.gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--sand); }
+.gallery-item { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.gallery-item a { display: block; width: 100%; height: 100%; }
+.gallery-item:hover { transform: translateY(-4px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+.gallery-item a:hover img { filter: brightness(1.08); }
+.gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--sand); cursor: pointer; transition: filter 0.25s ease; }
 .gallery-price { padding: 0.8rem 1rem 1rem; color: var(--accent-dark); font-weight: 600; }
 
 /* Workshops */
