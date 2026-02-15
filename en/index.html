@@ -117,10 +117,9 @@
           <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_17.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_17.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 3"></a></div>
           <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_22.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_22.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 4"></a></div>
           <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_23.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_23.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 5"></a></div>
-          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_26.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_26.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 6"></a></div>
-          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_27.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_27.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 7"></a></div>
-          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_31.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_31.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 8"></a></div>
-          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_36.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_36.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 9"></a></div>
+          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_27.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_27.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 6"></a></div>
+          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_31.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_31.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 7"></a></div>
+          <div class="gallery-item"><a href="../assets/general/nature/oilpaint/clickable_36.webp" target="_blank"><img src="../assets/general/nature/oilpaint/card_36.webp" loading="lazy" decoding="async" alt="Nature oil paint illustration 8"></a></div>
         </div>
       </div>
 
@@ -190,7 +189,7 @@
 
     <section id="workshop-videos">
       <h2>Workshop Videos</h2>
-      <p style="color:var(--gray);font-size:1em;">Highlights coming soon. Want a preview? Email us and we will share the latest reel.</p>
+      <p style="color:var(--gray);font-size:1em;">Highlights coming soon.</p>
     </section>
 
     <section id="workshop-pictures">
@@ -279,6 +278,7 @@
       </ul>
       <div class="contact-form-placeholder">
         <button class="cta-btn" id="openContactModal" type="button">Contact Us</button>
+        <p style="margin-top:0.6em;">Prefer email? <a href="mailto:pulseandart@gmail.com">pulseandart@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -319,7 +319,9 @@
     <div style="background:#fff;border-radius:16px;max-width:400px;width:90vw;padding:2.2rem 1.5rem 1.5rem 1.5rem;box-shadow:0 8px 32px #0002;position:relative;">
       <button id="closeContactModal" style="position:absolute;top:0.7em;right:1em;background:none;border:none;font-size:1.5em;line-height:1;color:#aaa;cursor:pointer;">&times;</button>
       <h2 style="margin-top:0;color:var(--accent);font-size:1.3em;">Contact Pulse and Art</h2>
-      <form id="customContactForm" autocomplete="off" style="display:flex;flex-direction:column;gap:1em;">
+      <form id="customContactForm" name="contact-general-en" method="POST" data-netlify="true" netlify-honeypot="bot-field" autocomplete="off" style="display:flex;flex-direction:column;gap:1em;">
+        <input type="hidden" name="form-name" value="contact-general-en">
+        <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"></label></p>
         <label>Name
           <input name="name" type="text" required style="width:100%;padding:0.5em;margin-top:0.2em;border-radius:6px;border:1px solid var(--border);">
         </label>
@@ -347,15 +349,6 @@
       openBtn.onclick = () => { modal.style.display = 'flex'; };
       closeBtn.onclick = () => { modal.style.display = 'none'; };
       modal.onclick = (e) => { if(e.target === modal) modal.style.display = 'none'; };
-    }
-    // Custom form submit (no backend, just show message)
-    const form = document.getElementById('customContactForm');
-    if(form) {
-      form.onsubmit = function(e) {
-        e.preventDefault();
-        document.getElementById('contactFormMsg').textContent = 'Thank you! Your message was not sent (static site). Please email pulseandart@gmail.com.';
-        setTimeout(()=>{modal.style.display='none';}, 2200);
-      };
     }
   </script>
 </body>
